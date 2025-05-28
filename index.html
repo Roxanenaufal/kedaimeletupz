@@ -33,7 +33,7 @@
       <button onclick="kurang()">-</button>
       <button onclick="tambah()">+</button>
     </div>
-    <p>Pembayaran Hanya COD</p>
+    <!-- <p>Pembayaran Hanya COD</p> -->
     <br><br>
     <div>
       <button id="orderBtn" class="order-btn">Beli Sekarang</button>
@@ -117,7 +117,8 @@
                   Produk: ${product.nama}
                   Jumlah: ${jumlah}
                   Total Harga: Rp. ${totalPrice.toLocaleString()}
-                  Apakah bisa diproses?`;
+                  Apakah bisa diproses?
+                  Pembayaran hanya bisa COD`;
 
     const encodedpesan = encodeURIComponent(pesan);
     const whatsappUrl = `https://wa.me/6285691813468?text=${encodedpesan}`;
